@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/navigation";
+:root {
+  --color-white: #fff;
+  --color-primary: #c8050a;
+  --color-brown: #393436;
+  --color-tahiti: #3ab7bf;
+  --color-bermuda: #78dcca;
+}
+.hover-text-primary:hover {
+  color: var(--color-primary);
+}
+
+.hover-bg-primary:hover {
+  background-color: var(--color-primary);
+}
