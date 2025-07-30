@@ -8,14 +8,12 @@ const posts = [
     excerpt:
       "The Blue World City administration has recently announced development charges...",
     img: "https://propertynaama.com/wp-content/uploads/2025/07/WhatsApp-Image-2025-07-19-at-2.09.03-PM-750x400.jpeg",
-    link: "https://propertynaama.com/awami-green/",
   },
   {
     id: 2,
     title: "How to Avoid Scams in Property Investment?",
     excerpt: "Are you going to invest in property? It can be...",
     img: "https://propertynaama.com/wp-content/uploads/2025/07/WhatsApp-Image-2025-07-19-at-1.04.00-PM-750x400.jpeg",
-    link: "https://propertynaama.com/how-to-avoid-scams-in-property-investment/",
   },
   {
     id: 3,
@@ -23,14 +21,12 @@ const posts = [
     excerpt:
       "The Leadership of Future Development Holdings Private Limited (FDHL) has...",
     img: "https://propertynaama.com/wp-content/uploads/2025/07/WhatsApp-Image-2025-07-19-at-12.15.58-PM-1-750x400.jpeg",
-    link: "https://propertynaama.com/capital-and-lahore-smart-city/",
   },
   {
     id: 4,
     title: "New Metro City: Latest Development Progress",
     excerpt: "Updates on the New Metro City's development milestones...",
     img: "https://propertynaama.com/wp-content/uploads/2025/07/WhatsApp-Image-2025-07-19-at-1.04.00-PM-750x400.jpeg",
-    link: "https://propertynaama.com/new-metro-city-update/",
   },
   {
     id: 5,
@@ -38,7 +34,6 @@ const posts = [
     excerpt:
       "Here are the most anticipated housing projects launching in 2025...",
     img: "https://propertynaama.com/wp-content/uploads/2025/07/WhatsApp-Image-2025-07-19-at-2.09.03-PM-750x400.jpeg",
-    link: "https://propertynaama.com/top-5-housing-2025/",
   },
   {
     id: 6,
@@ -46,7 +41,6 @@ const posts = [
     excerpt:
       "Understanding the new real estate tax policies introduced this year...",
     img: "https://propertynaama.com/wp-content/uploads/2025/07/WhatsApp-Image-2025-07-19-at-12.15.58-PM-1-750x400.jpeg",
-    link: "https://propertynaama.com/real-estate-taxes-2025/",
   },
 ];
 
@@ -89,7 +83,7 @@ export default function BlogGrid() {
                 className="w-full h-52 object-cover"
               />
               <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-60 transition duration-300">
-                <a href={post.link} className="text-white text-3xl">
+                <a className="text-white cursor-pointer text-3xl">
                   <FaLongArrowAltRight />
                 </a>
               </div>
@@ -99,7 +93,7 @@ export default function BlogGrid() {
                 className="font-semibold text-lg hover:text-red-600 transition line-clamp-2"
                 style={{ color: "var(--color-primary)" }}
               >
-                <a href={post.link} target="_blank" rel="noopener noreferrer">
+                <a target="_blank" rel="noopener noreferrer">
                   {post.title}
                 </a>
               </h2>
@@ -107,8 +101,7 @@ export default function BlogGrid() {
                 {post.excerpt}
               </p>
               <a
-                href={post.link}
-                className="inline-block mt-3 text-sm font-medium hover:underline"
+                className="inline-block mt-3 text-sm cursor-pointer font-medium hover:underline"
                 style={{ color: "var(--color-primary)" }}
               >
                 Read More
@@ -123,7 +116,7 @@ export default function BlogGrid() {
         <div className="text-center mt-10">
           <button
             onClick={handleLoadMore}
-            className="bg-red-600 text-white px-6 py-3 rounded hover:bg-red-700 transition"
+            className="bg-red-600 cursor-pointer text-white px-6 py-3 rounded hover:bg-red-700 transition"
             disabled={loading}
           >
             {loading ? "Loading..." : "Load More"}

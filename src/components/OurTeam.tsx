@@ -30,11 +30,11 @@ export default function Team() {
             className="flex justify-center mb-10"
           >
             <div className="bg-gray-50 shadow-lg p-6 text-center w-96 hover:shadow-xl transition-all duration-300">
-              <a href="#">
+              <a>
                 <img src={img} className="mb-4" />
               </a>
               <h4 className="text-xl" style={{ color: "var(--color-primary)" }}>
-                <a href="#">Ch Jamshed Sandhu </a>
+                <a>Ch Jamshed Sandhu </a>
               </h4>
               <p className="text-sm text-gray-500">Musa Estate & Builders</p>
             </div>
@@ -51,23 +51,25 @@ export default function Team() {
               className="bg-white rounded shadow px-20 py-4 text-center hover:shadow-xl transition-all duration-300"
             >
               <h4 className="text-lg" style={{ color: "var(--color-primary)" }}>
-                <a href="#">M.Nouman Aslam</a>
+                <a>M.Nouman Aslam</a>
               </h4>
               <p className="text-sm text-gray-500">Senior Estate Advisor</p>
               <div className="flex justify-center mt-3 space-x-4">
                 <a
-                  href="#"
+                  href="https://wa.me/923009481659"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-1 rounded"
                   style={{ background: "var(--color-primary)" }}
                 >
-                  <FaWhatsapp className="w-6 h-6 text-white" />
+                  <FaWhatsapp className="w-6 h-6 text-white cursor-pointer" />
                 </a>
                 <a
-                  href="#"
+                  href="tel:+923009481659"
                   className="p-1 rounded"
                   style={{ background: "var(--color-primary)" }}
                 >
-                  <MdPhone className="w-6 h-6 text-white" />
+                  <MdPhone className="w-6 h-6 text-white cursor-pointer" />
                 </a>
               </div>
             </motion.div>
@@ -81,23 +83,25 @@ export default function Team() {
               className="bg-white rounded shadow px-20 py-4 text-center hover:shadow-xl transition-all duration-300"
             >
               <h4 className="text-lg" style={{ color: "var(--color-primary)" }}>
-                <a href="#">M.Nouman Aslam</a>
+                <a>M.Nouman Aslam</a>
               </h4>
               <p className="text-sm text-gray-500">Senior Estate Advisor</p>
               <div className="flex justify-center mt-3 space-x-4">
                 <a
-                  href="#"
+                  href="https://wa.me/923009481659"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-1 rounded"
                   style={{ background: "var(--color-primary)" }}
                 >
-                  <FaWhatsapp className="w-6 h-6 text-white" />
+                  <FaWhatsapp className="w-6 h-6 text-white cursor-pointer" />
                 </a>
                 <a
-                  href="#"
+                  href="tel:+923009481659"
                   className="p-1 rounded"
                   style={{ background: "var(--color-primary)" }}
                 >
-                  <MdPhone className="w-6 h-6 text-white" />
+                  <MdPhone className="w-6 h-6 text-white cursor-pointer" />
                 </a>
               </div>
             </motion.div>

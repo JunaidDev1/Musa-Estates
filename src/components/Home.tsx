@@ -21,10 +21,10 @@ export default function Home() {
           <h1 className="text-5xl lg:text-7xl font-bold uppercase bg-gradient-to-r from-red-500 to-white bg-clip-text text-transparent">
             Musa
           </h1>
-          <h3 className="uppercase mt-3 text-2xl lg:text-4xl">
-            estate advisor
+          <h3 className="uppercase mt-3 text-2xl lg:text-3xl">
+            estate & Builders
           </h3>
-          <p className="uppercase mt-3 text-2xl">New Beginnings Start Here</p>
+          <p className="uppercase mt-3 text-3xl">New Beginnings Start Here</p>
 
           {/* 🔽 Scroll Button */}
           <button
