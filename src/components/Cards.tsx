@@ -1,27 +1,32 @@
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import img from "../assets/central.jpg";
+import img2 from "../assets/behria.jpg";
+import img3 from "../assets/zain.jpg";
 const posts = [
   {
     id: 1,
-    title: "Blue World City Awami Green Block Development Charges",
+    title: "Central Park Housing Scheme",
     excerpt:
-      "The Blue World City administration has recently announced development charges...",
-    img: "https://propertynaama.com/wp-content/uploads/2025/07/WhatsApp-Image-2025-07-19-at-2.09.03-PM-750x400.jpeg",
+      "Located on Ferozepur Road, Central Park Housing Scheme offers well-planned infrastructure, parks, schools, and a hospital — making it ideal for families seeking a peaceful lifestyle.",
+    img: img,
   },
   {
     id: 2,
-    title: "How to Avoid Scams in Property Investment?",
-    excerpt: "Are you going to invest in property? It can be...",
-    img: "https://propertynaama.com/wp-content/uploads/2025/07/WhatsApp-Image-2025-07-19-at-1.04.00-PM-750x400.jpeg",
+    title: "Behria Nasheman Ferozepur Lahore",
+    excerpt:
+      "Bahria Nasheman on Ferozepur Road offers premium plots and modern living facilities with 24/7 security, wide roads, and an ideal location for both living and investment.",
+    img: img2,
   },
   {
     id: 3,
-    title: "Capital and Lahore Smart City Latest News",
+    title: "Zain Residencia Housing Scheme",
     excerpt:
-      "The Leadership of Future Development Holdings Private Limited (FDHL) has...",
-    img: "https://propertynaama.com/wp-content/uploads/2025/07/WhatsApp-Image-2025-07-19-at-12.15.58-PM-1-750x400.jpeg",
+      "Zain Residencia provides affordable housing options with essential amenities and rapid development progress — perfect for first-time buyers and investors.",
+    img: img3,
   },
+
   {
     id: 4,
     title: "New Metro City: Latest Development Progress",
@@ -80,10 +85,10 @@ export default function BlogGrid() {
               <img
                 src={post.img}
                 alt={post.title}
-                className="w-full h-52 object-cover"
+                className="w-full h-52 object-fit"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-60 transition duration-300">
-                <a className="text-white cursor-pointer text-3xl">
+              <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 ">
+                <a className="text-white  text-3xl">
                   <FaLongArrowAltRight />
                 </a>
               </div>
@@ -97,21 +102,21 @@ export default function BlogGrid() {
                   {post.title}
                 </a>
               </h2>
-              <p className="text-gray-600 text-sm mt-2 line-clamp-2">
+              <p className="text-gray-600 mb-3 text-sm mt-2 line-clamp-2">
                 {post.excerpt}
               </p>
-              <a
+              {/* <a
                 className="inline-block mt-3 text-sm cursor-pointer font-medium hover:underline"
                 style={{ color: "var(--color-primary)" }}
               >
                 Read More
-              </a>
+              </a> */}
             </div>
           </motion.div>
         ))}
       </div>
 
-      {/* Load More Button */}
+      {/* Load More Button
       {visibleCount < posts.length && (
         <div className="text-center mt-10">
           <button
@@ -122,7 +127,7 @@ export default function BlogGrid() {
             {loading ? "Loading..." : "Load More"}
           </button>
         </div>
-      )}
+      )} */}
     </section>
   );
 }
