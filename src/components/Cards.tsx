@@ -50,16 +50,9 @@ const posts = [
 ];
 
 export default function BlogGrid() {
-  const [visibleCount, setVisibleCount] = useState(3);
-  const [loading, setLoading] = useState(false);
+  const [visibleCount] = useState(3);
+  const [] = useState(false);
 
-  const handleLoadMore = () => {
-    setLoading(true);
-    setTimeout(() => {
-      setVisibleCount((prev) => prev + 3);
-      setLoading(false);
-    }, 1000); // 1 second loading simulation
-  };
 
   const visiblePosts = posts.slice(0, visibleCount);
 
